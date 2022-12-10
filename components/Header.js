@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-gray-800 fixed top-0 w-screen ">
+    <div className="bg-gray-800 sticky top-0 w-screen ">
       <header className="flex items-center justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden">
         <div className="">
           <Link href="/">
@@ -27,7 +27,7 @@ const Header = () => {
           </Link>
           <Link
             href="/"
-            className="text-sm uppercase hover:text-green-400 hover:scale-105 cursor-pointer font-medium transition ease-in duration-75"
+            className="text-sm uppercase rounded-full text-white bg-green-700 px-3 py-1 hover:scale-105 cursor-pointer font-medium transition ease-in duration-75" 
           >
             Follow
           </Link>
@@ -35,13 +35,13 @@ const Header = () => {
         <div className="flex items-center  md:space-x-5 text-green-300 transition-all">
           <Link
             href="/"
-            className=" cursor-pointer hover:text-white hover:bg-green-700 px-4 py-1 rounded-full transition ease-in duration-75 text-md "
+            className=" cursor-pointer hover:text-white hover:bg-green-700 px-4 py-1 rounded-full transition ease-in duration-75 text-xs sm:text-[15px]"
           >
             Sign-In
           </Link>
           <Link
             href="/"
-            className="border rounded-full border-green-600 px-4 py-1  items-center flex justify- cursor-pointer hover:text-white hover:bg-green-700 transition ease-in duration-75 text-md "
+            className="border rounded-full border-green-600 px-4 py-1  items-center flex justify- cursor-pointer hover:text-white hover:bg-green-700 transition ease-in duration-75 text-xs sm:text-[15px]"
           >
             Get Started
           </Link>

@@ -1,17 +1,17 @@
 import Head from "next/head";
 import React from "react";
 import Header from "../components/Header";
+import WelcomeCard from "../components/WelcomeCard";
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <div>
       <Head>
-        <title>Magic-Blogs</title>
+        <title>Max-Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      
-      
-    </React.Fragment>
+        <Header/>
+        <WelcomeCard/>
+      </div>
   );
 }
