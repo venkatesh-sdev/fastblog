@@ -15,7 +15,7 @@ const index = ({ posts }) => {
         <title>Max-Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="sticky top-0 z-50"><Header /></div>
+      <Header />
       <WelcomeCard />
       <BlogCardContainer posts={posts}/>
       <BlogCardContainer posts={posts}/>
@@ -47,7 +47,6 @@ export const getServerSideProps = async () => {
   }`;
 
     // fetch the data from the sanity client
-
     const posts = await sanityClient.fetch(query);
     return {
       props: {
@@ -55,6 +54,6 @@ export const getServerSideProps = async () => {
       },
     };
   } catch (error) {
-    console.log(error);
+  console.log(error);
   }
 };

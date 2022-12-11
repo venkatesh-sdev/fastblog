@@ -9,10 +9,10 @@ const BlogCard = ({post}) => {
     <React.Fragment>
       <Link
         href="/"
-        className="flex flex-col items-center bg-green-200 border rounded-lg shadow-md md:flex-row md:max-w-xl transition duration-500 ease-in-out hover:bg-green-500 "
+        className="flex flex-col items-center bg-green-200 border rounded-lg shadow-md md:flex-row md:max-w-xl transition duration-500 ease-in-out hover:bg-green-500 p-3 "
       >
-        <Image
-          className="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+        <img
+          className="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-48 md:rounded-lg "
           src={image}
           alt=""
          
