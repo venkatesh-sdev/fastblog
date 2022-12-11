@@ -47,13 +47,15 @@ export const getServerSideProps = async () => {
   }`;
 
     // fetch the data from the sanity client
+
     const posts = await sanityClient.fetch(query);
+
     return {
       props: {
         posts,
       },
     };
   } catch (error) {
-  console.log(error);
+    console.log(error);
   }
 };
