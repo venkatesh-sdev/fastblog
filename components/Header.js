@@ -3,8 +3,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-gray-800 sticky top-0 w-screen ">
-      <header className="flex items-center justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden">
+    <div className="bg-gray-800  w-screen z-50">
+      <header className="flex items-center sticky top-0 justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden">
         <div className="">
           <Link href="/">
             <h1 className="text-2xl font-bold text-gray-100 hover:animate-pulse hover:scale-105 transition duration-75">
