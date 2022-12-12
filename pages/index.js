@@ -1,9 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import BlogCard from "../components/BlogCard";
-import BlogCardContainer from "../components/BlogCardContainer";
-import Header from "../components/Header";
-import WelcomeCard from "../components/WelcomeCard";
+import {Header,WelcomeCard,BlogCardContainer} from '../components'
 
 import { sanityClient } from "../santiy";
 
