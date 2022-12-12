@@ -1,25 +1,26 @@
 import Link from "next/link";
 import React from "react";
 
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
     <div className="bg-gray-800  w-screen z-50 select-none ">
-      <motion.header initial={{
-        y:-500,
-        opacity:0,
-    }}
-    animate={{
-      y:0,
-      opacity:1,
-    }} 
-    transition={{ duration: 1.5}} className="flex items-center justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden">
+      <motion.header
+        initial={{
+          y: -500,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{ duration: 1.5 }}
+        className="flex items-center justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden"
+      >
         <div className="">
           <Link href="/">
-            <h1 
-              
-            className="text-2xl font-bold text-gray-100 hover:animate-pulse hover:scale-105 transition duration-75">
+            <h1 className="text-2xl font-bold text-gray-100 hover:animate-pulse hover:scale-105 transition duration-75">
               MaxBlog
             </h1>
           </Link>
@@ -39,7 +40,7 @@ const Header = () => {
           </Link>
           <Link
             href="/"
-            className="text-sm uppercase rounded-full text-white bg-skin-bgColor px-3 py-1 hover:scale-105 cursor-pointer font-medium transition ease-in duration-75" 
+            className="text-sm uppercase rounded-full text-white bg-skin-bgColor px-3 py-1 hover:scale-105 cursor-pointer font-medium transition ease-in duration-75"
           >
             Follow
           </Link>

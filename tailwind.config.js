@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       backgroundColor:{
         skin:{
-          bgColor:"var(--background-color)"
+          bgColor:"var(--background-color)",
+          hoverColor:"var(--hover-color)"
         }
       },
       textColor:{

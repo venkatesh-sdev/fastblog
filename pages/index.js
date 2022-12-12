@@ -13,7 +13,7 @@ const index = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <WelcomeCard />
-      <div className="grid grid-cols-1 lg:grid-cols-2  gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-5 mx-auto max-w-7xl justify-center">
           <BlogCardContainer posts={posts} heading="Recently Updated" />
           <BlogCardContainer posts={posts} heading="Most popular" />
           <BlogCardContainer posts={posts} heading="Highly Recommended" />

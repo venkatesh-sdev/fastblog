@@ -9,25 +9,41 @@ const BlogCard = ({ post }) => {
   const image = urlBuilder(post.mainImage).url();
   return (
     <React.Fragment>
-      <Link
-        href="/"
-        className="flex flex-col items-center bg-skin-bgColor  border select-none rounded-lg shadow-md md:flex-row md:max-w-xl transition-all duration-500 hover:bg-gradient-to-tr hover:shadow-gray-600  hover:bg-opacity-80 hover:box-shadow-2xl p-2 "
-      >
-        <img
-          className="object-cover w-full rounded-t-lg h-[180px] sm:h-[250px] md:h-auto md:w-48 md:rounded-lg "
-          alt="no Image found"
-          src={image}
-        />
-        <div className="flex flex-col justify-between p-4 leading-normal">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-serif">
-            {post.title}
-          </h5>
-          <p className="mb-3 font-normal text-gray-100 ">
+      <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+        <Link href="/">
+          <img class="rounded-t-lg" src={image} alt="" />
+        </Link>
+        <div class="p-5">
+          <Link href="/">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+              {post.title}
+            </h5>
+          </Link>
+          <p class="mb-3 font-normal text-gray-400">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
           </p>
+          <Link
+            href="/"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-skin-bgColor rounded-lg hover:bg-skin-hoverColor focus:ring-4 focus:outline-none hover:bg-skin-hoverColor focus:ring-blue-800"
+          >
+            Read more
+            <svg
+              aria-hidden="true"
+              class="w-4 h-4 ml-2 -mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </Link>
         </div>
-      </Link>
+      </div>
     </React.Fragment>
   );
 };

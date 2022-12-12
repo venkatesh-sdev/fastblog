@@ -8,5 +8,6 @@
     :root{
         --background-color:#05896C;
         --text-color:#00ffc8;
+        --hover-color:hsl(167, 71%, 17%);
     }
 }
