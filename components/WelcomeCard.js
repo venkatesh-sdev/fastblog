@@ -1,9 +1,9 @@
 import React from "react";
 import {motion} from 'framer-motion'
-
+// to-green-500 via-green-400  from-green-300
 const WelcomeCard = () => {
   return (
-    <div className="bg-gradient-to-r to-green-500 via-green-400  from-green-300 text-gray-800 w-screen">
+    <div className="bg-skin-bgColor  text-gray-900 w-screen">
     <div className="flex flex-col md:flex-row items-center justify-between  max-w-7xl mx-auto ">
         <div className="">
             <motion.h1 initial={{

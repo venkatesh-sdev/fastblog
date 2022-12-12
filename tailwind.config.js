@@ -6,7 +6,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      backgroundColor:{
+        skin:{
+          bgColor:"var(--background-color)"
+        }
+      },
+      textColor:{
+        skin:{
+          textColor:"var(--text-color)"
+        }
+      }
     },
   },
   plugins: [],

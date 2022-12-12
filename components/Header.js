@@ -27,33 +27,33 @@ const Header = () => {
         <div className="space-x-5 items-center text-gray-300 hidden md:inline-flex gap-5">
           <Link
             href="/"
-            className="text-sm uppercase hover:text-green-400 hover:scale-105 cursor-pointer  font-medium transition ease-in duration-75"
+            className="text-sm uppercase hover:text-skin-textColor hover:scale-105 cursor-pointer  font-medium transition ease-in duration-75"
           >
             Articles
           </Link>
           <Link
             href="/"
-            className="text-sm uppercase hover:text-green-400 hover:scale-105 cursor-pointer font-medium transition ease-in duration-75"
+            className="text-sm uppercase hover:text-skin-textColor hover:scale-105 cursor-pointer font-medium transition ease-in duration-75"
           >
             Categories
           </Link>
           <Link
             href="/"
-            className="text-sm uppercase rounded-full text-white bg-green-700 px-3 py-1 hover:scale-105 cursor-pointer font-medium transition ease-in duration-75" 
+            className="text-sm uppercase rounded-full text-white bg-skin-bgColor px-3 py-1 hover:scale-105 cursor-pointer font-medium transition ease-in duration-75" 
           >
             Follow
           </Link>
         </div>
-        <div className="flex items-center  md:space-x-5 text-green-300 transition-all">
+        <div className="flex items-center  md:space-x-5 text-skin-textColor transition-all">
           <Link
             href="/"
-            className=" cursor-pointer hover:text-white hover:bg-green-700 px-4 py-1 rounded-full transition ease-in duration-75 text-xs sm:text-[15px]"
+            className=" cursor-pointer hover:text-white hover:bg-skin-bgColor px-4 py-1 rounded-full transition ease-in duration-75 text-xs sm:text-[15px]"
           >
             Sign-In
           </Link>
           <Link
             href="/"
-            className="border rounded-full border-green-600 px-4 py-1  items-center flex justify- cursor-pointer hover:text-white hover:bg-green-700 transition ease-in duration-75 text-xs sm:text-[15px]"
+            className="border rounded-full border-green-600 px-4 py-1  items-center flex justify- cursor-pointer hover:text-white hover:bg-skin-bgColor transition ease-in duration-75 text-xs sm:text-[15px]"
           >
             Get Started
           </Link>
