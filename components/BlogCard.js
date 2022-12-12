@@ -11,7 +11,7 @@ const BlogCard = ({ post }) => {
     <React.Fragment>
       <Link
         href="/"
-        className="flex flex-col items-center bg-gradient-to-tr from-green-600 via-green-400 to-green-300 border rounded-lg shadow-md md:flex-row md:max-w-xl transition-[background-image] duration-500 hover:bg-gradient-to-tr  hover:from-green-400 hover:to-green-600 p-2 "
+        className="flex flex-col items-center bg-gradient-to-tr from-green-600 via-green-400 to-green-300 border rounded-lg shadow-md md:flex-row md:max-w-xl transition-all duration-500 hover:bg-gradient-to-tr hover:shadow-gray-600  hover:from-green-400 hover:to-green-600 hover:box-shadow-2xl p-2 "
       >
         <img
           className="object-cover w-full rounded-t-lg h-[180px] sm:h-[250px] md:h-auto md:w-48 md:rounded-lg "
