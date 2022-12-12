@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { urlBuilder } from "../santiy";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 // bg-gradient-to-tr from-green-600 via-green-400 to-green-300
 const BlogCard = ({ post }) => {
   const [image, setImage] = useState('');
