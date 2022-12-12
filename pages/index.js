@@ -27,7 +27,7 @@ export default index;
 
 //get the data from the sanity api
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   try {
     // query the data
     const query = `*[_type=="post"]{
@@ -50,6 +50,7 @@ export const getServerSideProps = async () => {
       props: {
         posts,
       },
+      revalidate:5,
     };
   } catch (error) {
     console.log(error);
