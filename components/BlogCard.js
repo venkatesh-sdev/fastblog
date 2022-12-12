@@ -25,7 +25,7 @@ const BlogCard = ({ post }) => {
           </p>
           <Link
             href="/"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-skin-bgColor rounded-lg hover:bg-skin-hoverColor focus:ring-4 focus:outline-none hover:bg-skin-hoverColor focus:ring-blue-800"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-skin-bgColor rounded-lg hover:bg-skin-hoverColor focus:ring-4 focus:outline-none focus:ring-blue-800"
           >
             Read more
             <svg
