@@ -3,7 +3,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import logoImage from '../assets/logo.png'
+
 
 const Header = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
       >
         <div>
           <Link href="/" className="flex">
-            <img src={logoImage} alt="logo" className="w-9 object-contain " />
+            
             <h1 className="text-2xl font-bold text-gray-100 hover:animate-pulse hover:scale-105 transition duration-75">
               MaxBlog
             </h1>
