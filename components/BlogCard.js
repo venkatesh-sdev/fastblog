@@ -10,11 +10,11 @@ const BlogCard = ({ post }) => {
   return (
     <React.Fragment>
       <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
-        <Link href="/">
+        <Link href={`/posts/${post.slug.current}`}>
           <img class="rounded-t-lg" src={image} alt="" />
         </Link>
         <div class="p-5">
-          <Link href="/">
+          <Link href={`/posts/${post.slug.current}`}>
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
               {post.title}
             </h5>

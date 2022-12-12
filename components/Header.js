@@ -3,6 +3,8 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
+import logoImage from '../assets/logo.png'
+
 const Header = () => {
   return (
     <div className="bg-gray-800  w-screen z-50 select-none ">
@@ -18,8 +20,9 @@ const Header = () => {
         transition={{ duration: 1.5 }}
         className="flex items-center justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden"
       >
-        <div className="">
-          <Link href="/">
+        <div>
+          <Link href="/" className="flex">
+            <img src={logoImage} alt="logo" className="w-9 object-contain " />
             <h1 className="text-2xl font-bold text-gray-100 hover:animate-pulse hover:scale-105 transition duration-75">
               MaxBlog
             </h1>

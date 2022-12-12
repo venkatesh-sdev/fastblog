@@ -16,7 +16,7 @@ const index = ({ posts }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-5 gap-5 mx-auto max-w-7xl justify-center items-center">
           <BlogCardContainer posts={posts} heading="Recently Updated" />
           <BlogCardContainer posts={posts} heading="Most popular" />
-          <BlogCardContainer posts={posts} heading="Recommended" />
+          <BlogCardContainer posts={posts} heading="Highly Recommended" />
           <BlogCardContainer posts={posts} heading="Others" />
         </div>
     </div>
