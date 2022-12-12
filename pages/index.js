@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import {Header,WelcomeCard,BlogCardContainer} from '../components'
+import { Header, WelcomeCard, BlogCardContainer } from "../components";
 
 import { sanityClient } from "../santiy";
 
@@ -14,11 +14,12 @@ const index = ({ posts }) => {
       </Head>
       <Header />
       <WelcomeCard />
-      <BlogCardContainer posts={posts}/>
-      <BlogCardContainer posts={posts}/>
-      <BlogCardContainer posts={posts}/>
-      <BlogCardContainer posts={posts}/>
-      
+      <div className="grid grid-cols-1 lg:grid-cols-2  gap-2">
+          <BlogCardContainer posts={posts} heading="Recently Updated" />
+          <BlogCardContainer posts={posts} heading="Most popular" />
+          <BlogCardContainer posts={posts} heading="Highly Recommended" />
+          <BlogCardContainer posts={posts} heading="Others" />
+        </div>
     </div>
   );
 };
