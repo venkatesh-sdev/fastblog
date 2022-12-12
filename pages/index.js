@@ -12,7 +12,6 @@ const index = ({ posts }) => {
         <title>Max-Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <WelcomeCard />
       <div className="grid grid-cols-1 lg:grid-cols-2  gap-2">
           <BlogCardContainer posts={posts} heading="Recently Updated" />

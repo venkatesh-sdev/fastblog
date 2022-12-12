@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 
 const Header = () => {
   return (
-    <div className="bg-gray-800  w-screen z-50">
+    <div className="bg-gray-800  w-screen z-50 select-none ">
       <motion.header initial={{
         y:-500,
         opacity:0,
@@ -14,7 +14,7 @@ const Header = () => {
       y:0,
       opacity:1,
     }} 
-    transition={{ duration: 1.5}} className="flex items-center sticky top-0 justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden">
+    transition={{ duration: 1.5}} className="flex items-center justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden">
         <div className="">
           <Link href="/">
             <h1 
