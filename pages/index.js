@@ -1,7 +1,6 @@
 import Head from "next/head";
 import React from "react";
 import { Header, WelcomeCard, BlogCardContainer } from "../components";
-
 import { sanityClient } from "../santiy";
 
 const index = ({ posts }) => {
@@ -14,11 +13,11 @@ const index = ({ posts }) => {
       </Head>
       <WelcomeCard />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-5 gap-5 mx-auto max-w-7xl justify-center items-center">
-          <BlogCardContainer posts={posts} heading="Recently Updated" />
-          <BlogCardContainer posts={posts} heading="Most popular" />
-          <BlogCardContainer posts={posts} heading="Highly Recommended" />
-          <BlogCardContainer posts={posts} heading="Others" />
-        </div>
+        <BlogCardContainer posts={posts} heading="Recently Updated" />
+        <BlogCardContainer posts={posts} heading="Popular" />
+        <BlogCardContainer posts={posts} heading="Highly Recommended" />
+        <BlogCardContainer posts={posts} heading="Others" />
+      </div>
     </div>
   );
 };
@@ -50,7 +49,7 @@ export const getStaticProps = async () => {
       props: {
         posts,
       },
-      revalidate:5,
+      revalidate: 5,
     };
   } catch (error) {
     console.log(error);

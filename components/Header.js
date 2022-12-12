@@ -9,15 +9,15 @@ const Header = () => {
   return (
     <div className="bg-gray-800  w-screen z-50 select-none ">
       <motion.header
-        initial={{
-          y: -500,
-          opacity: 0,
-        }}
-        animate={{
-          y: 0,
-          opacity: 1,
-        }}
-        transition={{ duration: 1.5 }}
+      initial={{
+        y: -500,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{ duration: 2 }}
         className="flex items-center justify-between max-w-7xl mx-auto p-2 md:p-5 uppercase overflow-hidden"
       >
         <div>
