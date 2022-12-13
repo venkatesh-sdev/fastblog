@@ -16,7 +16,7 @@ module.exports = {
         skin:{
           textColor:"var(--text-color)"
         }
-      }
+      },
     },
   },
   plugins: [],

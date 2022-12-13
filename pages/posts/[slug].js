@@ -1,20 +1,23 @@
-import React from 'react'
-import { sanityClient } from '../../santiy';
+import React from "react";
+import {AuthorInfo} from "../../components";
+import { sanityClient, urlBuilder } from "../../santiy";
 
-const PostDetails = ({post}) => {
-  console.log(post);
+const PostDetails = ({ post }) => {
   return (
-    <div>
-    
-    </div>
-  )
-}
+    <main>
+    <AuthorInfo post={post}/>
+    </main>
+  );
+};
 
-export default PostDetails
+export default PostDetails;
 
 
 
-export const getServerSideProps = async ({query}) => {
+
+
+export const getServerSideProps = async ({ query }) => {
+  console.log(query);
 
   const queryFetch = `*[_type=="post" && slug.current == $slug][0]{
     _id,
@@ -29,13 +32,18 @@ export const getServerSideProps = async ({query}) => {
       body
   }`;
 
-  const post = await sanityClient.fetch(queryFetch,{
-    slug:query?.slug
-  })
+  const post = await sanityClient.fetch(queryFetch, {
+    slug: query?.slug,
+  });
 
-  return{
-    props:{
+  return {
+    props: {
       post,
-    }
-  }
+    },
+  };
 };
+
+// <div className="max-w-xl mx-auto mb-10 object-center">
+//     <img src={urlBuilder(post.mainImage).url()} alt="BannerImage" className="max-w-xl object-cover"/>
+//   </div>
+// // 
