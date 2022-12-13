@@ -28,7 +28,7 @@ const BlogCard = ({ post }) => {
             far, in reverse chronological order.
           </p>
           <Link
-            href="/"
+            href={`/posts/${post.slug.current}`}
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-skin-bgColor rounded-lg hover:bg-skin-hoverColor transition duration-500 ease-in-out"
           >
             Read more
