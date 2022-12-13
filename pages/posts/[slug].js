@@ -4,8 +4,9 @@ import { sanityClient, urlBuilder } from "../../santiy";
 
 const PostDetails = ({ post }) => {
   return (
-    <main>
+    <main className="max-w-7xl mx-auto">
     <AuthorInfo post={post}/>
+    <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center font-medium py-2">{post.title}</h1>
     </main>
   );
 };

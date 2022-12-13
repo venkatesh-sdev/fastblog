@@ -21,6 +21,7 @@ const BlogCard = ({ post }) => {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
               {post.title}
             </h5>
+            <h5 className="text-white font-medium">Written by: <span className="font-medium">{post.author.name}</span></h5>
           </Link>
           <p className="mb-3 font-normal text-gray-400">
             Here are the biggest enterprise technology acquisitions of 2021 so
