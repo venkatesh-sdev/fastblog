@@ -2,26 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { urlBuilder } from "../santiy";
-// bg-gradient-to-tr from-green-600 via-green-400 to-green-300
 const BlogCard = ({ post }) => {
-  const [image, setImage] = useState('');
-  useEffect(() => {
-    console.log()
-    setImage()
-  }, [])
-  
   return (
     <React.Fragment>
-      <div className="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+      <div className="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700 hover:bg-gray-700 transition duration-500">
         <Link href={`/posts/${post.slug.current}`}>
-          <img className="rounded-t-lg" src={urlBuilder(post.mainImage).url()} alt="image" />
+          <img
+            className="rounded-t-lg"
+            src={urlBuilder(post.mainImage).url()}
+            alt="image"
+          />
         </Link>
         <div className="p-5">
           <Link href={`/posts/${post.slug.current}`}>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
               {post.title}
             </h5>
-            <h5 className="text-white font-medium">Written by: <span className="font-medium">{post.author.name}</span></h5>
+            <h5 className="text-white font-medium">
+              Written by:{" "}
+              <span className="font-medium">{post.author.name}</span>
+            </h5>
           </Link>
           <p className="mb-3 font-normal text-gray-400">
             Here are the biggest enterprise technology acquisitions of 2021 so
@@ -29,7 +29,7 @@ const BlogCard = ({ post }) => {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-skin-bgColor rounded-lg hover:bg-skin-hoverColor focus:ring-4 focus:outline-none focus:ring-blue-800"
+            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-skin-bgColor rounded-lg hover:bg-skin-hoverColor transition duration-500 ease-in-out"
           >
             Read more
             <svg

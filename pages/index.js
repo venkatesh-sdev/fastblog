@@ -4,7 +4,7 @@ import { Header, WelcomeCard, BlogCardContainer } from "../components";
 import { sanityClient } from "../santiy";
 
 const index = ({ posts }) => {
-  console.log(posts);
+  console.log(process.env.NEXT_SANITY_PUBLIC_DATASET);
   return (
     <div className="overflow-x-hidden">
       <Head>
@@ -12,10 +12,10 @@ const index = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <WelcomeCard />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-5 gap-5 mx-auto max-w-7xl justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2  p-5 gap-5 mx-auto max-w-7xl justify-center items-center">
         <BlogCardContainer posts={posts} heading="Recently Updated" />
         <BlogCardContainer posts={posts} heading="Popular" />
-        <BlogCardContainer posts={posts} heading="Highly Recommended" />
+        <BlogCardContainer posts={posts} heading="Recommended" />
         <BlogCardContainer posts={posts} heading="Others" />
       </div>
     </div>
