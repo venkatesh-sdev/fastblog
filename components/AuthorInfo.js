@@ -21,7 +21,7 @@ const AuthorInfo = ({ post }) => {
           </div>
         </div>
       </div>
-      <div className="px-5">
+      <div className="px-5 flex gap-3 sm:5">
             <SocialIcon url="https://www.instagram.com" bgColor="transparent" fgColor="gray"/>
             <SocialIcon url="https://www.youtube.com" bgColor="transparent" fgColor="gray"/>
             <SocialIcon url="https://www.twitter.com" bgColor="transparent" fgColor="gray"/>
