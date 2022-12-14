@@ -7,3 +7,4 @@ export { default as Footer } from "./Footer";
 export { default as Layout } from "./Layout";
 export { default as BlogBody } from "./BlogBody";
 export { default as LinkedBlogCardContainer } from "./LinkedBlogCardContainer";
+export { default as Comments } from './Comments'

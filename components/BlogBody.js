@@ -3,7 +3,7 @@ import PortableText from "react-portable-text";
 
 const BlogBody = ({ post }) => {
   return (
-    <div className="max-w-3xl mx-auto my-5">
+    <div className="max-w-3xl mx-auto my-5 p-5 text-justify">
       <PortableText
         content={post.body}
         projectId={"fgkks6qq"}

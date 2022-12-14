@@ -1,6 +1,6 @@
 import { data } from "autoprefixer";
 import React from "react";
-import { AuthorInfo, BlogBody, LinkedBlogCardContainer } from "../../components";
+import { AuthorInfo, BlogBody, Comments, LinkedBlogCardContainer } from "../../components";
 import { sanityClient, urlBuilder } from "../../santiy";
 
 const PostDetails = ({ post, posts }) => {
@@ -17,8 +17,10 @@ const PostDetails = ({ post, posts }) => {
       </h1>
       <BlogBody post={post} />
       <div className="grid  justify-center items-center py-5">
+      <Comments />
       <LinkedBlogCardContainer posts={posts} heading="Related to Authors" />
       </div>
+
     </main>
   );
 };
