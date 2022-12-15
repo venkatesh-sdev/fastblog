@@ -17,7 +17,7 @@ const PostDetails = ({ post, posts }) => {
       </h1>
       <BlogBody post={post} />
       <div className="grid  justify-center items-center py-5">
-      <Comments />
+      <Comments post={post}/>
       <LinkedBlogCardContainer posts={posts} heading="Related to Authors" />
       </div>
 
